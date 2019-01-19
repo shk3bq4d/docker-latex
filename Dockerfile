@@ -1,6 +1,8 @@
 FROM ubuntu:18.04
 MAINTAINER Nat Lownes <nat.lownes@gmail.com>
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update --fix-missing -qq -y \
   && apt-get install -y \
     texlive-latex-base \
@@ -18,6 +20,7 @@ RUN apt-get update --fix-missing -qq -y \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
+ENV DEBIAN_FRONTEND=
 
 ADD process.bash /root/
 RUN chmod +x /root/process.bash
