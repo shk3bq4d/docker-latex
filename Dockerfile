@@ -11,6 +11,12 @@ RUN apt-get update --fix-missing -qq -y \
     texlive-science \
     texlive-latex-extra \
     texlive-fonts-extra \
+    texlive-lang-french \
+    texlive-lang-german \
+    texlive-lang-english \
+    texlive-lang-spanish \
+    texlive-lang-italian \
+    texlive-lang-portuguese \
     curl \
     wget \
     git \
