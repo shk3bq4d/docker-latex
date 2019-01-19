@@ -4,9 +4,9 @@ MAINTAINER Nat Lownes <nat.lownes@gmail.com>
 RUN apt-get update --fix-missing -qq -y \
   && apt-get install -y \
     texlive-latex-base \
+    texlive-latex-recommended \
     texlive-xetex \
-    latex-xcolor \
-    texlive-math-extra \
+    texlive-science \
     texlive-latex-extra \
     texlive-fonts-extra \
     curl \
