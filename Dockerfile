@@ -1,5 +1,4 @@
-FROM ubuntu:18.04
-MAINTAINER Nat Lownes <nat.lownes@gmail.com>
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
